@@ -1,0 +1,162 @@
+<html>
+<head><title>Loan Amount</title>
+	<style type="text/css">
+		body
+		{
+			background-image: url(32.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+		}
+		table,td,body
+		{
+
+		font-weight: bolder;
+
+		}
+		table,td
+		{
+			color: red;
+			font-size: 20px;
+			
+		}
+		input[type=button]
+		{
+			color:#000000;
+			background:#993399;
+
+		}
+		.textbox input
+		{
+			border:none;
+			outline: none;
+			background:none;
+		}
+
+
+	</style>
+	<script>
+		function myFunction(x)
+		{
+           x.style.background="wheat";
+		}
+		function ChoosePlan()
+		{
+			var LA=document.getElementById('LoanAmount').value;
+			var Ins=document.getElementById("insta").value;
+			var LI=document.getElementById("Interest").value;
+			var Total=(LA*LI)+(LA*1)/(Ins*1);
+			document.getElementById("total").value=Total;
+
+			
+			var LI1=document.getElementById("Interest1").value;
+			var Total1=parseInt((LA*LI1)+(LA*1)/(Ins*1));
+			document.getElementById("final").value=Total1;
+
+		
+			var LI2=document.getElementById("Interest2").value;
+			var Total2=(LA*LI2)+(LA*1)/(Ins*1);
+			document.getElementById("cost").value=Total2;
+
+
+			var LI3=document.getElementById("Interest3").value;
+			var Total3=(LA*LI3)+(LA*1)/(Ins*1);
+			document.getElementById("cost3").value=Total3;
+
+			var LI4=document.getElementById("Interest4").value;
+			var Total4=(LA*LI4)+(LA*1)/(Ins*1);
+			document.getElementById("cost4").value=Total4;
+
+			var LI5=document.getElementById("Interest5").value;
+			var Total5=(LA*LI5)+(LA*1)/(Ins*1);
+			document.getElementById("cost5").value=Total5;
+
+			var LI6=document.getElementById("Interest6").value;
+			var Total6=(LA*LI6)+(LA*1)/(Ins*1);
+			document.getElementById("cost6").value=Total6;
+
+			var LI7=document.getElementById("Interest7").value;
+			var Total7=(LA*LI7)+(LA*1)/(Ins*1);
+			document.getElementById("cost7").value=Total7;
+
+			var LI8=document.getElementById("Interest8").value;
+			var Total8=(LA*LI8)+(LA*1)/(Ins*1);
+			document.getElementById("cost8").value=Total8;
+
+		}
+
+		
+		
+
+</script>
+</head>
+
+<body bgcolor="pink">
+	
+		<h1 style= "background-color: white;"  "color: yellow;" onmouseover="style.color='red'" onmouseout="style.color='orange'" ><center>LOAN CALCULATOR</center></h1>
+
+		<table   >
+			<table  align="center">
+			<tr >
+				<td>Name</td>
+				<td>:</td>
+				<td><input type="text" name="Name" onfocus="myFunction(this)"></td>
+			</tr>
+			<tr>
+				<td>Loan Amount</td>
+				<td>:</td>
+				<td><input type="text" name="Loan Amount" id="LoanAmount" onfocus="myFunction(this)"></td>
+			</tr>
+			<tr>
+				<td>Instalment</td>
+				<td>:</td>
+				<td><select onfocus="myFunction(this)" name="Instalment" id="insta">
+					<option>Select Months</option>
+					<option>12</option>
+					<option>24</option>
+					<option>36</option>
+				</select></td>
+			</tr>
+			<tr>
+			<td></td>
+			<td  ><input  type="button" name="Submit" value="Submit"  onmouseover="style.color='red'" onmouseout="style.color='black'" style="font-size: 20px;" onclick="ChoosePlan()" ></td>
+			<td></td>
+		</tr></table>
+		<br><br><br><br><br><br><br><br>
+		<h1 style="color: lime;" onmouseover="style.color='blue'" onmouseout="style.color='yellow'"><center >All Bank Loan Calculator</center></h1>
+		<table border="2" bgcolor="pink"  width="100%" style="box-shadow: yellow;" "border-radius: 60px;">
+		<tr>
+			<td>Plans</td>
+			<td>Axis Bank</td>
+			<td>ICICI Bank</td>
+			<td>HDFC Bank</td>
+		</tr>
+		<tr>
+			<td>PersonnalLoan</td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="total" ><input type="hidden" value="0.2" id="Interest"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="final" ><input type="hidden" value="1" id="Interest1"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost" ><input type="hidden" value="1.2" id="Interest2"  name=""></label></td>
+
+
+			</tr>
+		<tr>
+			<td>House Loan</td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost3" ><input type="hidden" value="1.0" id="Interest3"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost4" ><input type="hidden" value="2.2" id="Interest4"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost5" ><input type="hidden" value="1.1" id="Interest5"  name=""></label></td>
+
+
+
+			</tr>
+				<tr>
+			<td>Business Loan</td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost6" ><input type="hidden" value="1.4" id="Interest6"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost7" ><input type="hidden" value="2.2" id="Interest7"  name=""></label></td>
+			<td><label class="textbox"><input type="text" name="PersonnalLoan" id="cost8" ><input type="hidden" value="1.1" id="Interest8"  name=""></label></td>
+
+			</tr></table></table>
+			<br><br><br><br><br><br><br><br>
+
+		</body>
+		</html>
